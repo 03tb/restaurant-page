@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    font-family: 'DM Serif Display', serif;
+}
+
+#content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #f9a01b;
+}
+
+.logo {
+    width: 300px;
+    margin: 10px 70px 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #552583;
+}
+
+.list-item,
+header > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header > ul {
+    margin-right: 70px;
+}
+
+.list-item {
+    height: 100%;
+    width: 100px;
+    color: #f9a01b;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.list-item:hover {
+    background-color: #202020;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wrapper > h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+    width: 1200px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.wrapper > h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    width: 1200px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.team-photo {
+    width: 1200px;
+}
+
+.about-photo {
+    border-radius: 30px;
+}
+
+.item-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #f9a01b;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    align-items: start;
+    justify-items: center;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+    width: 650px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.item-container > p,
+.item-container > img {
+    width: 500px;
+}
+
+.item-container > p {
+    font-size: 24px;
+}
+
+.item-container h3 {
+    font-size: 50px;
+}
+
+.item-container h4 {
+    font-size: 30px;
+}
+
+footer {
+    height: 150px;
+    background-color: #552583;
+    color: #f9a01b;
+    font-size: 22px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 20px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-hr {
+    border-left: 4px solid #f9a01b;
+    height: 100px;
+    margin: 0px 30px;
+}
+
+@media (min-width: 2560px) {
+    .item-wrapper {
+        padding-top: 50px;
+        width: 100%;
+        background-color: #f9a01b;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        align-items: start;
+        justify-items: center;
+    }
+}
